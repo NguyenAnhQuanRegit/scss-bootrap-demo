@@ -6,11 +6,11 @@ const Comment = {
           <h4 class="">Comment</h4>
       </div>
       <div class="type-row">
-        <div class="type-row__avatar"><img class="img-fluid" src="./assets/img/avatar2.png"/></div>
+        <div class="type-row__avatar"><img class="img-fluid" src="https://res.cloudinary.com/dukoxsuhq/image/upload/v1663232856/Regit%20Demo/avatar2_hbuu1s.png"/></div>
         <div class="type-row__input"><textarea></textarea></div>
       </div>
       <div class="list-comment-row mt-5 mb-5">
-        <div class="list-comment-row__avatar"><img class="img-fluid" src="./assets/img/avatar2.png"/></div>
+        <div class="list-comment-row__avatar"><img class="img-fluid" src="https://res.cloudinary.com/dukoxsuhq/image/upload/v1663232856/Regit%20Demo/avatar2_hbuu1s.png"/></div>
         <div class="list-comment-row__text">
           <div class="comment-name">Your Name</div>
           <p>Yes,it's right</p>

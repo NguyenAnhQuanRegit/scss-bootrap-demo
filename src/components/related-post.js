@@ -11,7 +11,7 @@ const RelatedPost = {
                   .map(
                     (item) => /*html*/ `
                         <div class="list-post__item">
-                            <div class="list-post__item__img"><img class="img-fluid" src="./assets/img/cat2.png"/></div>
+                            <div class="list-post__item__img"><img class="img-fluid" src="https://res.cloudinary.com/dukoxsuhq/image/upload/v1663232857/Regit%20Demo/cat2_mrqyrf.png"/></div>
                             <div class="list-post__title">Lorem ipsum dolor sit amet,  adipiscing elit.</div>
                         </div>
                     `
