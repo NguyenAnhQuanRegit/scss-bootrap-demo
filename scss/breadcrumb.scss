@@ -1,0 +1,24 @@
+.breadcrumb-row {
+  margin-top: 10.5em;
+
+  .breadcrumb {
+    font-size: 16px;
+    .breadcrumb__1st {
+      a {
+        color: $text-secondary;
+        font-weight: $font-thin;
+        text-decoration: none;
+      }
+    }
+    .breadcrumb__2nd {
+      a {
+        color: #212121;
+        font-weight: $font-bold;
+      }
+      &::before {
+        color: $text-secondary;
+        content: ">";
+      }
+    }
+  }
+}

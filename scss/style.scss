@@ -1,0 +1,23 @@
+@import "./variables.scss";
+@import "./responsive.scss";
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: $font-face;
+  font-size: 15px;
+}
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+@import "./header.scss";
+@import "./pages/PostDetailPage.scss";
+@import "./breadcrumb.scss";
+@import "./post.scss";
+@import "./related-post.scss";
+@import "./comment.scss";
+@import "./pagination.scss";
+@import "./footer.scss";

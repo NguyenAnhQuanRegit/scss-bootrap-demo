@@ -1,0 +1,22 @@
+.pagination {
+  display: none;
+  text-align: center;
+  margin-top: 2em;
+  .pagination__button {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    border: none;
+    margin: 0 6px;
+  }
+  .active {
+    background-color: #801616;
+  }
+}
+
+@include responsive(sm) {
+  .pagination {
+    display: block;
+  }
+}
