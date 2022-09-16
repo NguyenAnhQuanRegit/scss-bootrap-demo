@@ -410,8 +410,8 @@ footer span {
 .pagination--home .pagination__button--home {
   border: none;
   border-radius: 50%;
-  min-width: 32px;
-  min-height: 32px;
+  width: 32px;
+  height: 32px;
   position: relative;
   overflow: hidden;
   background-color: transparent;
