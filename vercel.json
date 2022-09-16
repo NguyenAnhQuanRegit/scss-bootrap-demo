@@ -2,12 +2,12 @@
     "routes":
     [
         {
-            "src":"/",
-            "dest":"/main.js"
+            "src":"/main.js",
+            "dest":"/"
         },
         {
-            "src":"/detail-post",
-            "dest":"/main.js"
+            "src":"/main.js",
+            "dest":"/"
         }
     ]
 }
