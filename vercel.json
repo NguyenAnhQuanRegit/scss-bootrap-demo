@@ -5,9 +5,10 @@
     ],
     "routes":
     [
+        { "handle": "filesystem" },
         {
             "src":"/(.*)",
-            "dest":"./src/main.js"
+            "dest":"/index.html"
         }
     ]
 }
