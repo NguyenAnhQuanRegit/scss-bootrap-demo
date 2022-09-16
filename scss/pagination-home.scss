@@ -1,0 +1,40 @@
+.pagination--home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 56px 0 102px 0;
+  .pagination__button--home {
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    .pagination__page--home {
+      font-weight: $font-bolder;
+      font-size: 18px;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%, -50%);
+      border: none;
+      cursor: pointer;
+      border-radius: 100%;
+    }
+  }
+  .active {
+    background-color: #ffe4e4 !important;
+    color: #c40000;
+  }
+  .pagination__icon--home {
+    background-color: #e5e5e5;
+    padding: 9px 17px;
+    border-radius: 100%;
+    &:hover {
+      background-color: #c40000;
+    }
+  }
+}

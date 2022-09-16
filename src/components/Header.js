@@ -1,5 +1,5 @@
 const Header = {
-  render: () => {
+  render: (page) => {
     return /*html*/ `
 <header class="header d-flex align-items-center justify-content-between">
   <div class="header-left col-3 order-2 order-xl-1">
@@ -32,15 +32,23 @@ const Header = {
     <button class="header-right__menu-toggle-btn d-sm-none border-0 bg-white">
       <img src="https://res.cloudinary.com/dukoxsuhq/image/upload/v1663232857/Regit%20Demo/Group_188_amnswa.png" alt="" class="img-fluid" />
     </button>
-    <ul class="menu d-sm-flex d-none align-item-center">
+    <ul class="menu d-sm-flex d-xl-flex d-none align-items-center">
       <li>
-        <button class="menu__top"><span>Top</span></button>
+        ${(page = "detailPage"
+          ? /*html*/ `
+            <button class="menu__top--toppage">
+              <span>Top</span>
+            </button>`
+          : /*html*/ `
+            <button class="menu__top--detailpage">
+              <span>Top</span>
+            </button>`)}
       </li>
       <li>
         <div class="menu__create-blog">Create Blog</div>
       </li>
       <li>
-        <div class="my-profile d-xl-flex gap-4">
+        <div class="my-profile d-xl-flex align-items-center gap-4">
           <div class="my-profile__name">my name</div>
           <div class="my-profile__avatar">
             <img src="https://res.cloudinary.com/dukoxsuhq/image/upload/v1663232856/Regit%20Demo/avatar_tqqikz.png" alt="" class="img-fluid" />

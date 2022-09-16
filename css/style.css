@@ -41,6 +41,9 @@ body {
   box-shadow: 0.2px 0 #d4d4d4;
   background-color: white;
 }
+.header .header-middle .header-middle__form-search .search-input {
+  width: 100%;
+}
 .header .header-middle .header-middle__form-search .search-input::placeholder {
   font-family: "Noto Sans JP";
   font-weight: 400;
@@ -63,6 +66,16 @@ body {
   border: none;
   background-color: transparent;
   font-weight: 500;
+}
+.header .header-right ul.menu .menu__top--toppage {
+  color: white;
+  background-color: #770303;
+  padding: 4.6px 12px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 21.72px;
+  font-size: 15px;
+  border: 1px solid #770303;
 }
 
 .outlet {
@@ -204,8 +217,9 @@ body {
   }
 }
 .type-row .type-row__input textarea {
+  resize: none;
   border: 1px solid #e1e1e1;
-  height: 55px;
+  height: 58px;
   width: 100%;
   border-radius: 4px;
 }
@@ -284,6 +298,147 @@ footer {
 }
 footer span {
   margin: 0;
+}
+
+.list-blog {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 72px;
+  padding: 0 6.8em;
+}
+.list-blog .list-blog__blog-post {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2em;
+  row-gap: 4.6em;
+  margin: 2.5em auto;
+}
+.list-blog .list-blog__blog-post .post {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.list-blog .list-blog__blog-post .post__post-item-text {
+  padding: 1.5em 1.1em;
+  color: #211e3b;
+}
+.list-blog .list-blog__blog-post .post__post-item-text .post__post-item-author-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #211e3b;
+}
+.list-blog .list-blog__blog-post .post__post-item-text .post__post-item-author-row * {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  font-size: 15px;
+}
+.list-blog .list-blog__blog-post .post__post-item-text .post__post-item__title {
+  font-weight: 900;
+  font-size: 18px;
+  margin: 15px 0;
+  color: #211e3b;
+}
+.list-blog .list-blog__blog-post .post__post-item-text .post__post-item__describe {
+  font-size: 15px;
+}
+.list-blog .list-blog__blog-post .post__post-item-text .post__post-item__read-more {
+  padding: 10px 26px;
+  border: 1px solid #e4e4e4;
+  color: #c40000;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 4px;
+  margin-top: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.list-blog .list-blog__blog-post .post__post-item-text .post__post-item__read-more:hover {
+  background-color: #c40000;
+  color: white;
+}
+.list-blog .list-blog__blog-post .post__post-item-text .post__post-item__read-more img {
+  margin-top: 3px;
+}
+.list-blog .list-blog__title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-blog .list-blog__title-row .list-blog__title-row__title {
+  font-size: 3.2em;
+  font-weight: bolder;
+  line-height: 72.4px;
+}
+.list-blog .list-blog__title-row .list-blog__title-row__categories {
+  padding: 6px 10px;
+  width: 144px;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #dedede;
+}
+
+@media screen and (max-width: 480px) {
+  .list-blog {
+    padding: 0 2em;
+  }
+  .list-blog .list-blog__blog-post {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin: 0.9em auto;
+  }
+  .list-blog .list-blog__title-row__title {
+    font-size: 2em;
+  }
+}
+.pagination--home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 56px 0 102px 0;
+}
+.pagination--home .pagination__button--home {
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+}
+.pagination--home .pagination__button--home .pagination__page--home {
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+  border-radius: 100%;
+}
+.pagination--home .active {
+  background-color: #ffe4e4 !important;
+  color: #c40000;
+}
+.pagination--home .pagination__icon--home {
+  background-color: #e5e5e5;
+  padding: 9px 17px;
+  border-radius: 100%;
+}
+.pagination--home .pagination__icon--home:hover {
+  background-color: #c40000;
 }
 
 /*# sourceMappingURL=style.css.map */
