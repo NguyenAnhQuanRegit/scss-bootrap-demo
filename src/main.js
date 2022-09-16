@@ -1,6 +1,6 @@
 import Navigo from "navigo";
-import PostDetailPage from "./src/pages/PostDetailPage";
-import TopPage from "./src/pages/TopPage";
+import PostDetailPage from "./pages/PostDetailPage";
+import TopPage from "./pages/TopPage";
 
 const router = new Navigo("/", { linksSelector: "a", hash: "true" });
 
