@@ -1,13 +1,10 @@
 {
+    "version":2,
     "routes":
     [
         {
-            "src":"/main.js",
-            "dest":"/"
-        },
-        {
-            "src":"/main.js",
-            "dest":"/"
+            "src":"/(.*)",
+            "dest":"/main.js"
         }
     ]
 }
