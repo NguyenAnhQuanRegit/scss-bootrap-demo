@@ -38,3 +38,8 @@
     }
   }
 }
+@include responsive(sm) {
+  .pagination--home {
+    padding: 1em;
+  }
+}
