@@ -20,6 +20,7 @@ const TopPage = {
     `;
   },
   afterRender: () => {
+    Header.afterRender();
     Pagination.afterRender("home");
   },
 };
