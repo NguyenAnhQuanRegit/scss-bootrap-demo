@@ -3,11 +3,11 @@
     [
         {
             "src":"/",
-            "dest":""
+            "dest":"/main.js"
         },
         {
             "src":"/detail-post",
-            "dest":""
+            "dest":"/main.js"
         }
     ]
 }
